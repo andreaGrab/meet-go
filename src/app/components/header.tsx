@@ -12,7 +12,7 @@ export default function Header(){
             setToggle(0)
         }
     }
-    return <header className="text-black bg-amber-100">
+    return <header className="text-black bg-amber-100 relative">
         <nav className="flex justify-between p-5 items-center">
             <div className="flex gap-5 items-center">
                 <a href="#">
@@ -28,15 +28,16 @@ export default function Header(){
                     <button className="border-1 border-neutral-500 rounded-r-full p-[.5rem] bg-orange-300 text-orange-100">Search</button>
                 </form>
             </div>
-            <a className="md:hidden" onClick={toggleMenu} href="#">
-                <img className="w-10" src="/menu-icon.svg" alt="Menu icon" />
-            </a>
             <div className="flex items-center gap-7">
+                <a className="md:hidden" onClick={toggleMenu} href="#">
+                    <img className="w-10" src="/menu-icon.svg" alt="Menu icon" />
+                </a>
                 <ul className="gap-5 hidden md:flex">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Create event</a></li>
                 </ul>
+                <p className="hidden md:block">|</p>
                 <a href="#">
                     <img className="w-10" src="/user-icon.svg" alt="user icon" />
                 </a>
