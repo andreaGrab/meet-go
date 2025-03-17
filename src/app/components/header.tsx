@@ -13,7 +13,7 @@ export default function Header(){
         }
     }
     return <header className="text-black bg-amber-100 relative">
-        <nav className="flex justify-between p-5 items-center">
+        <nav className="flex justify-between p-5 gap-5 items-center">
             <div className="flex gap-5 items-center">
                 <a href="#">
                     <Image
@@ -23,9 +23,9 @@ export default function Header(){
                     height={60}
                     />
                 </a>
-                <form>
-                    <input type="serarch" placeholder="Search here" className="border-1 border-neutral-500 mr-[.5px] rounded-l-full p-[.5rem] bg-orange-100"></input>
-                    <button className="border-1 border-neutral-500 rounded-r-full p-[.5rem] bg-orange-300 text-orange-100">Search</button>
+                <form className="flex">
+                    <input type="serarch" placeholder="Search here" className="w-[100%] border-1 border-neutral-500 mr-[.5px] rounded-l-full p-[.5rem] bg-orange-100"></input>
+                    <button className="w-[100%] flex-2 border-1 border-neutral-500 rounded-r-full p-[.5rem] bg-orange-300 text-orange-100">Search</button>
                 </form>
             </div>
             <div className="flex items-center gap-7">
