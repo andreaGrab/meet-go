@@ -6,8 +6,10 @@ export default function EventCarousel(){
         <div className="lg:backdrop-blur-3xl w-[100%]">
             <div className="flex md:w-[85%] 2xl:w-[60%] h-full m-auto bg-white/80 p-5 gap-5 rounded-b-sm">
                 <div className="flex-1">
-                    <h1 className="text-[2rem] md:text-[2.5rem] font-bold">Name event</h1>
-                    <p className="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio soluta quo, aperiam ad fugiat sequi quae. Consequuntur, tempora labore, pariatur ex a nisi nesciunt sint unde dolore nostrum asperiores?</p>
+                    <div className="lg:max-w-96 overflow-hidden">
+                        <h1 className="text-[2rem]/12 md:text-[2.5rem] font-bold">Name event very long title</h1>
+                    </div>
+                    <p className="my-3 max-h-[145px] overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio soluta quo, aperiam ad fugiat sequi quae. Consequuntur, tempora labore, pariatur ex a nisi nesciunt sint unde dolore nostrum asperiores?</p>
 
                     <div className="grid grid-rows-2 grid-cols-2 gap-1 md:my-5">
                         <div className="flex items-center gap-2">
@@ -41,7 +43,7 @@ export default function EventCarousel(){
                 </div>
             </div>
             <div className="flex w-[100%] justify-center gap-3 items-center py-3">
-                <a className="bg-white w-5 h-5 rounded-full" href="#"></a>
+                <a className="bg-white w-5 h-5 rounded-full border-3 border-black border-double hover:border-white hover:bg-black trasition-all ease-in-out duration-300" href="#"></a>
                 <a className="bg-black w-5 h-5 rounded-full" href="#"></a>
                 <a className="bg-black w-5 h-5 rounded-full" href="#"></a>
             </div>
