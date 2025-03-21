@@ -119,7 +119,7 @@ export default function EventCarousel(){
                     events.map((event, index)=>{
                         const defaultBtn = 'bg-black w-5 h-5 rounded-full';
                         const active = 'bg-white w-5 h-5 rounded-full border-3 border-black border-double hover:border-white hover:bg-black trasition-all ease-in-out duration-300';
-                        return <a key={index} className={indexEvent===index ? active : defaultBtn} href="#"></a>
+                        return <a key={index} className={indexEvent===index ? active : defaultBtn} onClick={()=>{setIndexEvent(index)}} href="#"></a>
                     })
                 }
             </div>
