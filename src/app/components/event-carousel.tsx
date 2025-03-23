@@ -25,9 +25,9 @@ export default function EventCarousel({events}:any){
     }
     carouselPlay(setIndexGall, indexGall, eventLenGallery, (delay/eventLenGallery)-1);
     carouselPlay(setIndexEvent, indexEvent, eventsLen, delay);
-    
 
-    return <div style={{'--dynamic-image': `url(${events[indexEvent].gallery[indexGall]})`}} className="h-fit bg-[image:var(--dynamic-image)] bg-center lg:bg-right overflow-hidden flex flex-col items-center transition-all duration-300">
+
+    return <div style={{"--dynamic-image": `url(${events[indexEvent].gallery[indexGall]})`}} className="h-fit bg-[image:var(--dynamic-image)] bg-center lg:bg-right overflow-hidden flex flex-col items-center transition-all duration-300">
         <div className="lg:backdrop-blur-3xl w-[100%]">
             <div className="flex md:drop-shadow-sm md:w-[85%] 2xl:w-[60%] h-full m-auto bg-white/80 p-5 gap-5 md:rounded-b-sm">
                 <div className="flex-1">
@@ -62,7 +62,7 @@ export default function EventCarousel({events}:any){
                 </div>
                 <div className="flex-2 hidden lg:block">
                     <div className="overflow-hidden w-[100%] h-[100%] relative">
-                        <img className="absolute w-[100%] transition-all duration-300" src={(events[indexEvent].gallery[indexGall])} alt="event image" />
+                        <img className="z-[-1] absolute w-[100%] transition-all duration-300" src={(events[indexEvent].gallery[indexGall])} alt="event image" />
                     </div>
                 </div>
             </div>

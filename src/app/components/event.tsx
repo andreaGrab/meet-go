@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Event({event, index}:any){
     return (
-        <div className={"bg-amber-500 md:rounded-sm drop-shadow-sm overflow-hidden" + (index===0 ? '' : ' mt-[5rem] md:mt-5')}>
+        <div className={"bg-amber-500 md:rounded-sm drop-shadow-sm overflow-hidden" /*+ (index===0 ? '' : ' mt-[5rem] md:mt-5')*/}>
             <div className="overflow-hidden relative h-70">
                 <img className="absolute w-[100%]" src={event.gallery[0]} alt="image alt" />
             </div>
