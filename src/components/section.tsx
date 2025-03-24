@@ -8,7 +8,7 @@ export default function Section({events}:any){
                     <h1 className="text-2xl font-bold text-center mb-[5rem]">NAME OF THE SECTION</h1>
                 </div>
                 <div className="text-right md:flex-1">
-                    <a className="hidden md:block hover:underline" href="#">View all events</a>
+                    <a className="hidden md:block hover:underline" href="/events">View all events</a>
                 </div>
             </div>
             <div className="lg:grid grid-cols-2 xl:grid-cols-3 gap-5">
@@ -19,7 +19,7 @@ export default function Section({events}:any){
                 }
             </div>
             <div className="mt-5 md:hidden">
-                <button className="p-5 block m-auto w-[90%] bg-amber-100 border-1 border-amber-600 rounded-sm drop-shadow-sm">VIEW ALL EVENTS</button>
+                <a className="p-5 block m-auto w-[90%] text-center bg-amber-100 border-1 border-amber-600 rounded-sm drop-shadow-sm" href="/events">VIEW ALL EVENTS</a>
             </div>
         </section>
     );

@@ -15,7 +15,7 @@ export default function Header(){
     return <header className="text-black bg-amber-100 relative">
         <nav className="flex justify-between p-5 gap-5 items-center">
             <div className="flex gap-5 items-center">
-                <a href="#">
+                <a href="/">
                     <Image
                     src='/app-icon.png'
                     alt="Brand Image"
@@ -33,8 +33,8 @@ export default function Header(){
                     <img className="w-10" src="/menu-icon.svg" alt="Menu icon" />
                 </a>
                 <ul className="gap-5 hidden md:flex">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/events">Events</a></li>
                     <li><a href="#">Create event</a></li>
                 </ul>
                 <p className="hidden md:block">|</p>
