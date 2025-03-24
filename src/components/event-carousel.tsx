@@ -28,7 +28,7 @@ export default function EventCarousel({events}:any){
 
 
     return <div style={{"--dynamic-image": `url(${events[indexEvent].gallery[indexGall]})`}} className="h-fit bg-[image:var(--dynamic-image)] bg-center lg:bg-right overflow-hidden flex flex-col items-center transition-all duration-300">
-        <div className="lg:backdrop-blur-3xl w-[100%]">
+        <div className="lg:backdrop-blur-3xl w-[100%]   ">
             <div className="flex md:drop-shadow-sm md:w-[85%] 2xl:w-[60%] h-full m-auto bg-white/80 p-5 gap-5 md:rounded-b-sm">
                 <div className="flex-1">
                     <div className="lg:max-w-96 overflow-hidden">

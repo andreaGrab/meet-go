@@ -1,7 +1,4 @@
-import React from "react";
-import Section from "./section";
-import EventCarousel from "./event-carousel";
-
+import Event from "@/components/event";
 // dummy data
 const testoMatto:string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium distinctio soluta quo, aperiam ad fugiat sequi quae. Consequuntur, tempora labore, pariatur ex a nisi nesciunt sint unde dolore nostrum asperiores?';
 
@@ -85,12 +82,12 @@ const events:Array<any> = [{
     ]
 }];
 // ------"
-
-export default function Content(){
-    return (
-        <>
-            <EventCarousel events={events}/>
-            <Section events={events}/>
-        </>
-    );
+export default function Events(){
+    return <>
+        {
+            events.map((event:any, index:number)=>{
+                return <Event key={index} event={event} index={index}/>
+            })
+        }
+    </>
 }
