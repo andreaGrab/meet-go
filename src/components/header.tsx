@@ -33,9 +33,9 @@ export default function Header(){
                 </form>
             </div>
             <div className="flex items-center gap-7">
-                <a className="md:hidden" onClick={toggleMenu} href="#">
+                <button className="md:hidden" onClick={toggleMenu}>
                     <img className="w-10" src="/menu-icon.svg" alt="Menu icon" />
-                </a>
+                </button>
                 <ul className="gap-5 hidden md:flex">
                     <li><a href="/">Home</a></li>
                     <li><a href="/events">Events</a></li>
