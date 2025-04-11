@@ -39,10 +39,13 @@ export default function Header(){
                 <ul className="gap-5 hidden md:flex">
                     <li><a href="/">Home</a></li>
                     <li><a href="/events">Events</a></li>
-                    <li><a href="#">Create event</a></li>
+                    <li><a href="/create-event">Create event</a></li>
                 </ul>
                 <p className="hidden md:block">|</p>
-                <a href="#">
+                {
+                // set conditional routing if user is logged in or not 
+                }
+                <a href="/log-in">
                     <img className="w-10" src="/user-icon.svg" alt="user icon" />
                 </a>
             </div>

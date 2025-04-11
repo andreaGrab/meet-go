@@ -1,5 +1,5 @@
 "use client";
-import React, { use } from "react";
+import React from "react";
 import { useEffect, useState } from "react";
 import Modal from "@/components/modal";
 
@@ -11,8 +11,9 @@ type schedule = {
     endHour: string;
 };
 
+const formFieldStyle = 'px-2 p-2 border-1 border-amber-500 rounded-md';
+
 export default function AddEvent(){
-    const formFieldStyle = 'px-2 p-2 border-1 border-amber-500 rounded-md';
     // modal state
     const [modal, setModal] = useState({
         hidden: true,
