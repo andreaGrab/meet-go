@@ -1,7 +1,7 @@
 "use client";
 import {useState} from "react";
 
-export default function EventsFilterBar(){
+export default function EventsFilterBar({hasTitle}:any){
     //styles
     const filterTag = "border-1 border-rose-500 p-1 bg-rose-50 rounded-sm";
 
@@ -36,12 +36,10 @@ export default function EventsFilterBar(){
         setPlace(dataValue);
     }
 
-    console.log(isClear)
-
     return (
         <div className="flex flex-col">
-            <div className="flex-1 flex justify-around">
-                <h1 className="text-2xl font-bold text-center md:mb-[5rem]">ALL EVENTS by:<br></br><span> <strong className={category!=''?filterTag:''}>{category}</strong> <strong className={place!=''?filterTag:''}>{place}</strong> <strong className={!isClear?filterTag:''}>{isClear?'':formatDate(date)}</strong></span></h1>
+            <div className={"flex-1 justify-around " + (hasTitle ? 'flex' : 'hidden')}>
+                <h1 className="text-2xl font-bold text-center md:mb-[2rem]">ALL EVENTS by:<br></br><span> <strong className={category!=''?filterTag:''}>{category}</strong> <strong className={place!=''?filterTag:''}>{place}</strong> <strong className={!isClear?filterTag:''}>{isClear?'':formatDate(date)}</strong></span></h1>
             </div>
             <div className="flex py-5 items-center justify-around gap-5 md:flex-1">
                 <img className="hidden md:block w-5" src="/filter.svg" alt="filter icon" />
@@ -65,7 +63,7 @@ export default function EventsFilterBar(){
                         <option>Entertainment</option>
                         <option>Other</option>
                     </select>
-                    <select className="border-1 border-black md:rounded-sm p-3 text-center" name="place" value={place} onChange={onSetPlace}>
+                    <select className="border-1 border-black md:rounded-sm p-3 text-center md:p-1" name="place" value={place} onChange={onSetPlace}>
                         <option>Filter by place:</option>
                         <option>Online</option>
                         <option>Cina</option>
@@ -79,7 +77,7 @@ export default function EventsFilterBar(){
                         <option>Canada</option>
                         <option>...</option>
                     </select>
-                    <input className="w-[100%] md:w-[initial] border-1 border-black md:rounded-sm p-3 text-center" type="date" name="date" value={formatDate(date)} onChange={onSetDate}/>
+                    <input className="w-[100%] md:w-[initial] border-1 border-black md:rounded-sm p-3 text-center md:p-1" type="date" name="date" value={formatDate(date)} onChange={onSetDate}/>
                     <button type='submit' className="cursor-pointer"><img className="w-10" src="/reset-icon.svg" alt="reset icon" /></button>
                 </form>
                 

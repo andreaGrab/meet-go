@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Dropdown from "./drop-down-nav";
 import { useState } from 'react';
@@ -16,7 +15,7 @@ export default function Header(){
         }
     }
 
-    return <header className="text-black bg-amber-100 sticky top-0 z-10">
+    return <header className="text-black bg-amber-100 sticky top-0 z-10 border-b-1 border-gray-300">
         <nav className="flex justify-between p-5 gap-5 items-center">
             <div className="flex gap-5 items-center">
                 <a href="/">

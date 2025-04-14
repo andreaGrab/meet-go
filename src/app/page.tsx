@@ -15,6 +15,7 @@ export const events:any = [{
     organizer: 'Limbo Life ltd',
     soldTickets: 739,
     price: '12,99€',
+    isDraft: true,
     gallery: [
         '/gallery_testing/event1/conductor.jpg',
         '/gallery_testing/event1/champagne.jpg',
@@ -29,6 +30,7 @@ export const events:any = [{
     organizer: 'Rossana DKW snc',
     soldTickets: 320,
     price: 'FREE',
+    isDraft: false,
     gallery: [
         '/gallery_testing/event2/beach.jpg',
         '/gallery_testing/event2/fireworks.jpg',
@@ -43,6 +45,7 @@ export const events:any = [{
     organizer: 'Alpha Club',
     soldTickets: 739,
     price: '35,00€',
+    isDraft: false,
     gallery: [
         '/gallery_testing/event3/hand.jpg',
         '/gallery_testing/event3/audience.jpg',
@@ -57,6 +60,7 @@ export const events:any = [{
     organizer: 'Limbo Life ltd',
     soldTickets: 739,
     price: '12,99€',
+    isDraft: false,
     gallery: [
         '/gallery_testing/event1/conductor.jpg',
         '/gallery_testing/event1/champagne.jpg',
@@ -71,6 +75,7 @@ export const events:any = [{
     organizer: 'Rossana DKW snc',
     soldTickets: 320,
     price: 'FREE',
+    isDraft: true,
     gallery: [
         '/gallery_testing/event2/beach.jpg',
         '/gallery_testing/event2/fireworks.jpg',
@@ -85,6 +90,7 @@ export const events:any = [{
     organizer: 'Alpha Club',
     soldTickets: 739,
     price: '35,00€',
+    isDraft: true,
     gallery: [
         '/gallery_testing/event3/hand.jpg',
         '/gallery_testing/event3/audience.jpg',

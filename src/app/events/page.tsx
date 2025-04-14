@@ -1,3 +1,4 @@
+import React from "react";
 import Event from "@/components/event";
 import {events} from "@/app/page";
 export default function Events(){

@@ -1,3 +1,4 @@
+import React from "react";
 import EventsFilterBar from "@/components/events-filter-bar";
 
 export default function EventsLayout({
@@ -6,7 +7,7 @@ export default function EventsLayout({
     children: React.ReactNode
 }){
     return  <section className="md:px-[5rem] pb-[5rem] pt-5">
-                <EventsFilterBar/>
+                <EventsFilterBar hasTitle={true}/>
                 <div className="lg:grid grid-cols-2 xl:grid-cols-3 gap-5">
                     {children}
                 </div>
